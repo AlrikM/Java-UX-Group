@@ -1,0 +1,16 @@
+.TopFlex {
+    display: flex;
+    width: auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.h2 {
+    align-self: center;
+    color: #151414;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
