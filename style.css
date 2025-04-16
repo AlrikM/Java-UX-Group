@@ -1,16 +1,49 @@
-.TopFlex {
-    display: flex;
-    width: auto;
-    padding: 10px 20px;
-    justify-content: space-between;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cce7ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
-.h2 {
-    align-self: center;
-    color: #151414;
-    font-family: Inter;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.sources {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.upload-area, .preview-area {
+    width: 48%;
+    padding: 10px;
+    background-color: #4d4d4d;
+    border: 2px dashed #aaa;
+    position: relative;
+    color: white;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
 }
