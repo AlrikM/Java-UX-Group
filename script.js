@@ -15,5 +15,5 @@ document.getElementById('cancelBtn').addEventListener('click', function() {
 });
 document.getElementById('menuBorder').addEventListener('click',function() {
     const display = document.getElementById('dropDown')
-    display.style.display = 'none';
+    display.classList.toggle('hidden')
 })
