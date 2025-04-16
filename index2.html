@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bilden</h1>
+            <button class="menu">☰</button>
+            <button class="user">👤</button>
+        </header>
+
+        <main>
+            <div class="sources">
+                <div class="upload-area">
+                    <p>Fält/utrymme för bifogade foton</p>
+                    <button id="addBtn">Add</button>
+                    <button id="removeBtn">Remove</button>
+                </div>
+                <div class="preview-area">
+                    <p>Fält/utrymme för förhandsvisning av foton</p>
+                </div>
+            </div>
+
+            <div class="settings">
+                <h2>Resize and resample</h2>
+                <label>W: <input type="number" id="width" placeholder="mm"></label>
+                <label>H: <input type="number" id="height" placeholder="mm"></label>
+                <label>Units:</label>
+                <select id="units">
+                    <option value="millimeter">Millimeter</option>
+                </select>
+                <label><input type="checkbox" id="resample"> Resample</label>
+                <label>DPI: <input type="number" id="dpi" value="300"></label>
+
+                <h2>Crop</h2>
+                <label>W: <input type="number" id="cropWidth" placeholder="mm"></label>
+                <label>H: <input type="number" id="cropHeight" placeholder="mm"></label>
+
+                <button id="applyBtn">Apply</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
