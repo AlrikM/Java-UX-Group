@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilden</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bilden</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <button id="menuBorder"><img src="assets/Menu.png" class="icon" onclick=""></button>
-            <h1>Bilden</h1>
-            <button><img src="assets/Login.png" class="icon"></button>
-        </header>
-        <div id="dropDown" class="drop-down hidden">
-            <p>BatchJob</p>
-            <p>meny val</p>
+  <header>
+    <div class="menu-icon">☰</div>
+    <h1>Bilden</h1>
+    <div class="profile-icon">👤</div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <h2>Sources</h2>
+      <ul id="imageList">
+        <!-- List of images -->
+        <li class="selected">Image1</li>
+        <li>Image2</li>
+        <li>Image3</li>
+        <li>Image4</li>
+        <li>Image5</li>
+        <li>Image6</li>
+        <li>Image7</li>
+        <li>Image8</li>
+        <li>Image9</li>
+        <li>Image10</li>
+      </ul>
+    </section>
+
+    <section class="preview-section">
+      <div class="preview">
+        <div>
+          <h3>Original</h3>
+          <img src="assets/dog.png" alt="Original" />
         </div>
+        <div>
+          <h3>Ändrat</h3>
+          <img src="assets/dog2.png" alt="Edited" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="addBtn">Add</button>
+        <button id="removeBtn">Remove</button>
+      </div>
+    </section>
 
-        <main>
-            <div class="sources">
-                <div class="upload-area">
-                    <p>Fält/utrymme för bifogade foton</p>
-                    <button id="addBtn">Add</button>
-                    <button id="removeBtn">Remove</button>
-                </div>
-                <div class="preview-area">
-                    <p>Fält/utrymme för förhandsvisning av foton</p>
-                </div>
-            </div>
+    <section class="tools-panel">
+      <div class="resize">
+        <h3>Resize and resample</h3>
+        <label>W <input type="number" value="340"> mm</label>
+        <label>H <input type="number" value="302"> mm</label>
+        <label>
+          <input type="checkbox" checked> Resample
+        </label>
+        <select>
+          <option>Bilinear</option>
+          <option>Nearest Neighbor</option>
+        </select>
+        <label>DPI <input type="number" value="300"></label>
+      </div>
 
-            <div class="settings">
-                <h2>Resize and resample</h2>
-                <label>W: <input type="number" id="width" placeholder="mm"></label>
-                <label>H: <input type="number" id="height" placeholder="mm"></label>
-                <label>Units:</label>
-                <select id="units">
-                    <option value="millimeter">Millimeter</option>
-                </select>
-                <label><input type="checkbox" id="resample"> Resample</label>
-                <label>DPI: <input type="number" id="dpi" value="300"></label>
+      <div class="crop">
+        <h3>Crop</h3>
+        <label>W <input type="number" value="340"> mm</label>
+        <label>H <input type="number" value="302"> mm</label>
+        <!-- Grid selection could be built out -->
+      </div>
 
-                <h2>Crop</h2>
-                <label>W: <input type="number" id="cropWidth" placeholder="mm"></label>
-                <label>H: <input type="number" id="cropHeight" placeholder="mm"></label>
+      <div class="rotate">
+        <h3>Rotera och spegla</h3>
+        <button>90°</button>
+        <button>180°</button>
+        <button>270°</button>
+        <button>Flip horizontal</button>
+        <button>Flip vertical</button>
+      </div>
 
-                <button id="applyBtn">Apply</button>
-                <button id="cancelBtn">Cancel</button>
-            </div>
-        </main>
-    </div>
-    <script src="script.js"></script>
+      <div class="actions">
+        <button id="applyBtn">Apply</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
