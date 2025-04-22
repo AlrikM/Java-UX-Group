@@ -47,16 +47,17 @@
   .x{
     /* x */
 
-position: absolute;
-right: 0px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-/* identical to box height */
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
 
-color: #000000;
+  color: #000000;
 
 
   }
