@@ -44,6 +44,22 @@
     padding: 0px;
   }
 
+  .x{
+    /* x */
+
+position: absolute;
+right: 0px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+/* identical to box height */
+
+color: #000000;
+
+
+  }
   
   .sidebar ul {
     list-style: none;
@@ -53,26 +69,7 @@
     left: 0px;
     top: 0px
       }
-    /*
-    /* Frame 50 */
-
-    /*box-sizing: border-box;
-
-    /* Auto layout */
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 7px;
-    position: absolute;
-    width: 720px;
-    height: 340px;
-    left: 59px;
-    top: 469px;
-
-    background: #9B8E8E;
-    border: 1px dashed #000000;
-    */
+  
   .sidebar li {
     padding: 0.5rem;
     margin-bottom: 4px;
