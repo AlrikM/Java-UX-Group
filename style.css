@@ -21,7 +21,15 @@
 }
   
   main {
-    display: flex;
+    /* Frame 32 */
+
+position: absolute;
+width: 1312px;
+height: 898px;
+left: 64px;
+top: 115px;
+
+background: #B3B1B1;
     height: calc(100vh - 80px);
   }
   
@@ -30,13 +38,41 @@
     background: #2d2d2d;
     color: white;
     padding: 1rem;
-    overflow-y: auto;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
   }
+
   
   .sidebar ul {
     list-style: none;
+    position: absolute;
+width: 720px;
+height: 470.89px;
+left: 0px;
+top: 0px
   }
-  
+/*
+ /* Frame 50 */
+
+/*box-sizing: border-box;
+
+/* Auto layout */
+/*display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 7px;
+position: absolute;
+width: 720px;
+height: 340px;
+left: 59px;
+top: 469px;
+
+background: #9B8E8E;
+border: 1px dashed #000000;
+*/
   .sidebar li {
     padding: 0.5rem;
     margin-bottom: 4px;
@@ -52,6 +88,28 @@
     flex: 2;
     padding: 1rem;
     background-color: #998787;
+    box-sizing: border-box;
+    /* Frame 50 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+position: absolute;
+width: 720px;
+height: 340px;
+left: 59px;
+top: 469px;
+
+background: #9B8E8E;
+border: 1px dashed #000000;
+
+    
   }
   
   .preview {
@@ -79,6 +137,15 @@
     background: #3e3e3e;
     color: white;
     padding: 1rem;
+    /* Group 32 */
+
+position: absolute;
+width: 429px;
+height: 753px;
+left: 824px;
+top: 49px;
+
+
   }
   
   .tools-panel h3 {
