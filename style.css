@@ -9,21 +9,16 @@
     background-color: #e0dddd;
     color: #333;
   }
+ 
   
-  header {
+  .TopFlex {
+    background: white;
     display: flex;
+    width: auto;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    padding: 1rem 2rem;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  .menu-icon,
-  .profile-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
+}
   
   main {
     display: flex;
